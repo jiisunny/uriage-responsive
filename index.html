@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uriage</title>
+  
+  <!-- 오픈 그래프(The Open Graph protocol) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Uriage" />
+  <meta property="og:title" content="Uriage Korea" />
+  <meta property="og:description" content="프랑스 더모코스메틱 브랜드, 유리아쥬! 민감성 피부를 위한 프랑스 온천수 함유." />
+  <meta property="og:image" content="./images/uriage_seo.png" />
+  <meta property="og:url" content="#" />
+
+  <!-- 트위터 카드(Twitter Cards) -->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="Uriage" />
+  <meta property="twitter:title" content="Uriage Korea" />
+  <meta property="twitter:description" content="프랑스 더모코스메틱 브랜드, 유리아쥬! 민감성 피부를 위한 프랑스 온천수 함유." />
+  <meta property="twitter:image" content="./images/uriage_seo.png" />
+  <meta property="twitter:url" content="#" />
+
+  <link rel="icon" href="./favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="stylesheet" href="css/master.css" />
+  <script src="js/jquery-3.5.0.min.js"></script>
+  <script src="js/menu.js"></script>
+    
+  <!-- Link Swiper's css -->
+  <link rel="stylesheet" href="css/swiper.css" />
+    
+<style>
+ /* BANNER SWIPER */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and ( min-width: 768px){
+.swiper-container.banner_big{
+  display: block;
+}
+.swiper-container.banner_small{
+  display: none;
+}
+}
+@media screen and ( max-width: 767px){
+.swiper-container.banner_big{
+  display: none;
+}
+.swiper-container.banner_small{
+  display: block;
+    margin-top: 41px;
+}
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide > a,
+.swiper-slide > a > img{
+  width: 100%
+}
+</style>
+</head>
+<body>
+
+<input id="toggle" type="checkbox" />
+<div id="wrap">
+  <!----- HEADER ----->
+  <header id="main_header">
+    <!-- LOGO -->
+    <h1 id="logo"><a href="#">LOGO</a></h1>
+    <!-- 토글 버튼 -->
+    <label class="toggle" for="toggle">toggle</label>
+    <!-- 검색 -->
+    <input id="toggle_search" type="checkbox" />
+    <label class="toggle_search" for="toggle_search">search</label>
+    <div id="search_wrap">
+      <form>
+        <fieldset>
+          <legend>SEARCH</legend>
+          <input id="search_text" type="text" placeholder="Search Uriage Products" />
+          <input id="search_btn" type="image" src="images/search.png" alt="검색" />
+        </fieldset>
+      </form>
+    </div>
+  </header>
+  <!----- MAIN NAV ----->
+  <nav id="main_nav">
+    <img src="images/nav_bg.png" alt="유리아쥬 배경" />
+    <ul class="menu">
+      <li><a href="#">PRODUCTS</a></li>
+      <li><a href="#">BEST SELLER</a></li>
+      <li><a href="#">PROMOTION</a></li>
+      <li><a href="#">SHOP</a></li>
+      <li><a href="#">COMMUNITY</a></li>
+    </ul>   
+    <!-- 로그인 -->
+    <ul id="login">
+      <li><a href="#">LOGIN</a></li>
+      <li><a href="#">JOIN</a></li>
+    </ul>
+  </nav>
+</div>   
+  
+<!----- BANNER ----->
+<!-- 배너슬라이더 시작 -->
+<!-- Swiper -->
+<section id="banner">
+  <!-- [s]tablet pc & PC ver.-->
+  <div class="swiper-container banner_big">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="#"><img src="images/banner1.png" alt="유리아쥬 스틱레브르 오리지널 립밤" /></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#"><img src="images/banner2.png" alt="유리아쥬 진피 마일드 젤" /></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#"><img src="images/banner3.png" alt="유리아쥬 제모스 토너" /></a>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <!--
+    <div class="swiper-button-next"><img src="images/btn_next.png" alt="next" /></div>
+    <div class="swiper-button-prev"><img src="images/btn_prev.png" alt="prev" /></div>
+    -->
+  </div>
+  <!-- [e]tablet pc & PC ver.-->
+  
+  <!-- [s]smart phone ver. -->
+  <div class="swiper-container banner_small">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#"><img src="images/banner1_m.png" alt="유리아쥬 스틱레브르 오리지널 립밤" /></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#"><img src="images/banner2_m.png" alt="유리아쥬 진피 마일드 젤" /></a>
+        </div>
+        <div class="swiper-slide">
+            <a href="#"><img src="images/banner3_m.png" alt="유리아쥬 제모스 토너" /></a>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <!--
+      <div class="swiper-button-next"><img src="images/btn_next.png" alt="next" /></div>
+      <div class="swiper-button-prev"><img src="images/btn_prev.png" alt="prev" /></div>
+      -->
+  </div>
+  <!-- [e]smart phone ver. -->
+</section><!--// section id="banner" -->
+
+<!-- Swiper JS -->
+<script src="js/swiper.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    autoplay: {
+      delay: 2900,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+<!-- 배너슬라이더 끝 -->
+    
+<!----- CONTENTS ----->
+<div id="container">
+  <!-- NEW -->
+  <section id="new">
+    <h2>NEW</h2>
+    <article>
+      <div>
+        <a href="#">
+          <div class="new1"></div>
+          <h3>유리아쥬 이제약 토너 500mL</h3>
+          <p>HYSEAC PURIFYING TONER</p>
+        </a>
+      </div>
+    </article>
+    <article>
+      <div>
+        <a href="#">
+          <div class="new2"></div>
+          <h3>배리어덤 시카 선크림 SPF50+</h3>
+          <p>BARIEDERM CICA-CREAM</p>
+        </a>
+      </div>
+    </article>
+    <article>
+      <div>
+        <a href="#">
+          <div class="new3"></div>
+          <h3>쉬르그라리끼드 전신 클렌저</h3>
+          <p>URIAGE GEL SURGRAS</p>
+        </a>
+      </div>
+    </article>
+  </section>
+        
+  <!-- BESTSELLER -->
+  <section id="bestseller">
+    <h2>BESTSELLER</h2>
+    <article>
+      <div>
+        <a href="#">
+          <div class="best1"></div>
+          <h3>유리아쥬 제모스 토너 500mL</h3>
+          <p>XEMOSE TONER</p>
+        </a>
+      </div>
+    </article>
+    <article>
+      <div>
+        <a href="#">
+          <div class="best2"></div>
+          <h3>스틱레브르 오리지널 립밤</h3>
+          <p>STICK LEVRES ORIGINAL</p>
+        </a>
+      </div>
+    </article>
+    <article>
+      <div>
+        <a href="#">
+          <div class="best3"></div>
+          <h3>진피 마일드 젤 200mL</h3>
+          <p>GYN-PHY DAILY FEMININE MILD GEL</p>
+        </a>
+      </div>
+    </article>
+  </section>
+</div>
+
+<!-- BRAND STORY_pc-->
+<section id="story_pc">
+  <img src="images/story_pc.png" alt="유리아쥬 브랜드스토리" />
+</section>
+
+<!-- BRAND STORY_phone-->
+<section id="story_phone">
+  <img src="images/story_phone.png" alt="유리아쥬 브랜드스토리" />
+</section>
+
+<!-- SNS -->
+<section id="sns">
+  <h2>&num; URIAGE WATER</h2>
+  <ul class="gosns">
+    <li><a href="#">facebook</a></li>
+    <li><a href="#">instagram</a></li>
+  </ul>
+  <ul class="photo">
+    <li><a href="#"><img src="images/sns1.png" alt="인스타그램 사진 1" /></a></li>
+    <li><a href="#"><img src="images/sns2.png" alt="인스타그램 사진 2" /></a></li>
+    <li><a href="#"><img src="images/sns3.png" alt="인스타그램 사진 3" /></a></li>
+    <li><a href="#"><img src="images/sns4.png" alt="인스타그램 사진 4" /></a></li>
+    <li><a href="#"><img src="images/sns5.png" alt="인스타그램 사진 5" /></a></li>
+    <li><a href="#"><img src="images/sns6.png" alt="인스타그램 사진 6" /></a></li>
+  </ul>
+</section>
+
+<!----- FOOTER ----->
+<footer id="main_footer">
+  <!-- 푸터 상단 -->
+  <nav id="ft_nav">
+    <ul>
+      <li><a href="#">사이트이용약관</a></li>
+      <li><a href="#">개인정보처리방침</a></li>
+      <li><a href="#">이메일무단수집거부</a></li>
+      <li><a href="#">대량구매문의</a></li>
+      <li><a href="#">입사지원</a></li>
+      <li><a href="#">CONTACT US</a></li>
+    </ul>
+  </nav>
+  <!-- 패밀리사이트 -->
+  <div class="fms_wrap">
+    <div class="fms">
+      <h2>Family Site</h2>
+      <ul>
+        <li><a href="#">눅스</a></li>
+        <li><a href="#">라우쉬</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- 패밀리사이트 적용 -->
+  <script>
+    $(function(){
+      var bCheck=false;
+      $(".fms > h2").click(function(){
+        bCheck = !bCheck;
+
+        if(bCheck){
+          $(".fms > ul").addClass("active");
+        }else{
+          $(".fms > ul").removeClass("active");
+          $("#fms > ul > li").removeClass("active");
+        }
+      });
+
+      $(".fms > ul > li").click(function(){
+        $(".fms > ul > li").removeClass("active");
+        $(this).addClass("active");
+      });
+    });
+  </script>
+
+  <!-- 푸터 하단 --> 
+  <div id="util">
+    <div class="util_wrap">
+      <h1 class="logo">유한양행</h1>
+      <div class="info">
+        <ul>
+          <li>&#40;주&#41;케이엔유</li>
+          <li>대표&nbsp;&#58;&nbsp;박희원</li>
+          <li>개인정보책임자&nbsp;&#58;&nbsp;박주형</li>
+          <li>이메일&nbsp;&#58;&nbsp;uriagecs&#64;knucos.com</li>
+        </ul>
+        <address>
+          서울특별시 강남구 영동대로 86길 12 동남유화빌딩 2층 유리아쥬코리아
+        </address>
+        <p class="copyright">
+          COPYRIGHT&copy; 2017 KNU COSMETICS. ALL RIGHTS RESERVED.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+/* contents_style_mobile.css */
+
+/***** BANNER *****/
+#banner {
+  width: 100%;
+  position: relative;
+  margin-top: 41px;
+}
+.swiper-slide > a > img {
+  width: 100%;
+}
+
+/***** CONTENTS *****/
+#container {
+  width: 100%;
+  position: relative;
+  background: url(../images/bg_2.png) no-repeat;
+  background-size: 100%;
+}
+  #container > section {
+    width: 768px;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    overflow: hidden;
+  }
+    /***** h2 *****/
+    #container > section > h2 {
+      font-size: 40px;
+      font-weight: 200;
+      text-align: left;
+      height: 50px;
+      line-height: 50px;
+      margin-left: 50px;
+    }
+    /***** ARTICLE *****/
+    #container > section > article {
+      float: left;
+      width: 370px;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+      #container > section > article > div > a > div {
+        width: 365px;
+        height: 445px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        overflow: hidden;
+      }
+      #container > section > article > div > a > h3 {
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 40px;
+        color: #2c2c2c;
+        text-align: center;
+      }
+      #container > section > article > div > a > p {
+        font-size: 23px;
+        font-weight: 300;
+        line-height: 40px;
+        color: #2c2c2c;
+        text-align: center;
+      }
+        /** 제품 hover effect **/
+        .new1 {
+          background-image: url(../images/new1.png);
+          background-size: 99%;
+          transition-duration: 0.5s;
+        }
+        #new > article:nth-of-type(1) > div:hover > a > .new1 {
+          background-image: url(../images/new1_hover.png);
+          background-size: 99%;
+        }
+        .new2 {
+          background-image: url(../images/new2.png);
+          transition-duration: 0.5s;
+          background-size: 97%;
+        }
+        #new > article:nth-of-type(2) > div:hover > a > .new2 {
+          background-image: url(../images/new2_hover.png);
+          background-size: 97%;
+        }
+        .new3 {
+          background-image: url(../images/new3.png);
+          transition-duration: 0.5s;
+          background-size: 97%;
+        }
+        #new > article:nth-of-type(3) > div:hover > a > .new3 {
+          background-image: url(../images/new3_hover.png);
+          background-size: 97%;
+        }
+       .best1 {
+          background-image: url(../images/best1.png);
+          transition-duration: 0.5s;
+          background-size: 98%;
+        }
+        #bestseller > article:nth-of-type(1) > div:hover > a > .best1 {
+          background-image: url(../images/best1_hover.png);
+          background-size: 98%;
+        }
+        .best2 {
+          background-image: url(../images/best2.png);
+          transition-duration: 0.5s;
+          background-size: 98%;
+        }
+        #bestseller > article:nth-of-type(2) > div:hover > a > .best2 {
+          background-image: url(../images/best2_hover.png);
+          background-size: 98%;
+        }
+        .best3 {
+          background-image: url(../images/best3.png);
+          transition-duration: 0.5s;
+          background-size: 98%;
+        }
+        #bestseller > article:nth-of-type(3) > div:hover > a > .best3 {
+          background-image: url(../images/best3_hover.png);
+          background-size: 98%;
+        }
+
+/***** BRAND STORY *****/
+#story_pc {
+  width: 100%;
+}
+  #story_pc > img {
+    width: 100%;
+  }
+#story_phone {
+  display: none;
+}
+
+/***** SNS *****/
+#sns {
+  width: 100%;
+  margin-top: 100px;
+  position: relative;
+  margin-bottom: 100px;
+}
+  #sns > h2 {
+    font-size: 47px;
+    line-height: 50px;
+    font-weight: 200;
+    text-align: left;
+    padding-left: 5%;
+    margin-bottom: 60px;
+  }
+  #sns > ul.gosns {
+    position: absolute;
+    top: 2px; left: 50%;
+  }
+    #sns > ul.gosns > li {
+      display: inline-block;
+      padding: 0 20px;
+    }
+      #sns > ul.gosns > li > a {
+        text-indent: -6000px; overflow: hidden;
+        width: 46px;
+        height: 46px;
+      }
+      #sns > ul.gosns > li:first-child > a {
+        background: url(../images/icon_facebook.png);
+      }
+      #sns > ul.gosns > li:last-child > a {
+        background: url(../images/icon_instagram.png);
+      }
+
+  #sns > ul.photo {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+    #sns > ul.photo > li {
+      display: inline-block;
+      width: 33%;
+    }
+      #sns > ul.photo > li > a {
+        overflow: hidden;
+      }
+        #sns > ul.photo > li > a > img {
+          transition-duration: 0.6s;
+          width: 100%;
+        }
+        #sns > ul.photo > li:hover > a > img {
+          transform: scale(1.1);
+        }

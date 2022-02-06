@@ -1,0 +1,193 @@
+/* contents_style_mobile.css */
+
+/***** BANNER *****/
+#banner {
+  width: 100%;
+  position: relative;
+  margin-top: -1px;
+}
+.swiper-slide > a > img {
+  width: 100%;
+}
+
+/***** CONTENTS *****/
+#container {
+  width: 100%;
+  position: relative;
+  background: url(../images/bg_2.png) no-repeat;
+  background-size: 100%;
+}
+  #container > section {
+    width: 90%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: hidden;
+  }
+    section#bestseller {
+      padding-bottom: 10%;
+    }
+    /****** h2 *****/
+    #container > section > h2 {
+      font-size: 35px;
+      font-weight: 200;
+      text-align: left;
+      height: 30px;
+      line-height: 35px;
+      margin-left: 5%;
+      margin-top: 10%;
+      margin-bottom: 15%;
+    }
+    /***** ARTICLE *****/
+    #container > section > article {
+      float: left;
+      width: 100%;
+      margin-right: 5px;
+      margin-left: 5px;
+      margin-bottom: 10%;
+    }
+      #container > section > article > div > a > div {
+        width: 255px;
+        height: 315px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        overflow: hidden;
+      }
+      #container > section > article > div > a > h3 {
+        font-size: 23px;
+        font-weight: 300;
+        line-height: 30px;
+        color: #2c2c2c;
+        text-align: center;
+      }
+      #container > section > article > div > a > p {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 40px;
+        color: #2c2c2c;
+        text-align: center;
+      }
+
+        /** 제품 hover effect **/
+        .new1 {
+          background-image: url(../images/new1.png);
+          background-size: 99%;
+          transition-duration: 0.5s;
+        }
+        #new > article:nth-of-type(1) > div:hover > a > .new1 {
+          background-image: url(../images/new1_hover.png);
+          background-size: 99%;
+        }
+        .new2 {
+          background-image: url(../images/new2.png);
+          transition-duration: 0.5s;
+          background-size: 97%;
+        }
+        #new > article:nth-of-type(2) > div:hover > a > .new2 {
+          background-image: url(../images/new2_hover.png);
+          background-size: 97%;
+        }
+        .new3 {
+          background-image: url(../images/new3.png);
+          transition-duration: 0.5s;
+          background-size: 97%;
+        }
+        #new > article:nth-of-type(3) > div:hover > a > .new3 {
+          background-image: url(../images/new3_hover.png);
+          background-size: 97%;
+        }
+       .best1 {
+          background-image: url(../images/best1.png);
+          transition-duration: 0.5s;
+          background-size: 98%;
+        }
+        #bestseller > article:nth-of-type(1) > div:hover > a > .best1 {
+          background-image: url(../images/best1_hover.png);
+          background-size: 98%;
+        }
+        .best2 {
+          background-image: url(../images/best2.png);
+          transition-duration: 0.5s;
+          background-size: 98%;
+        }
+        #bestseller > article:nth-of-type(2) > div:hover > a > .best2 {
+          background-image: url(../images/best2_hover.png);
+          background-size: 98%;
+        }
+        .best3 {
+          background-image: url(../images/best3.png);
+          transition-duration: 0.5s;
+          background-size: 98%;
+        }
+        #bestseller > article:nth-of-type(3) > div:hover > a > .best3 {
+          background-image: url(../images/best3_hover.png);
+          background-size: 98%;
+        }
+
+/****** BRAND STORY *****/
+#story_pc {
+  display: none;
+}
+#story_phone {
+  width: 100%;
+}
+  #story_phone > img {
+    width: 100%;
+  }
+
+/****** SNS *****/
+#sns {
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+  margin-bottom: 80px;
+}
+  #sns > h2 {
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+    #sns > ul.gosns {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+      #sns > ul.gosns > li {
+        display: inline-block;
+        padding: 0 20px;
+      }
+        #sns > ul.gosns > li > a {
+          text-indent: -6000px; overflow: hidden;
+          width: 40px;
+          height: 40px;
+        }
+        #sns > ul.gosns > li:first-child > a {
+          background-image: url(../images/icon_facebook.png);
+          background-size: 100%;
+        }
+        #sns > ul.gosns > li:last-child > a {
+          background-image: url(../images/icon_instagram.png);
+          background-size: 100%;
+        }
+
+    #sns > ul.photo {
+      width: 100%;
+    }
+      #sns > ul.photo > li {
+        display: inline-block;
+        width: 49.5%;
+      }
+        #sns > ul.photo > li > a {
+          overflow: hidden;
+        }
+          #sns > ul.photo > li > a > img {
+            transition-duration: 0.6s;
+            width: 100%;
+          }
+          #sns > ul.photo > li:hover > a > img {
+            transform: scale(1.1);
+          }

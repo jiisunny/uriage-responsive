@@ -1,0 +1,190 @@
+/* contents_style_pc.css */
+
+/***** BANNER *****/
+#banner {
+  width: 100%;
+  position: absolute;
+  top: 160px;
+}
+.swiper-slide > a > img {
+  width: 100%;
+}
+
+/***** CONTENTS *****/
+img {
+  width: 100%;
+  z-index: -10;
+}
+#container {
+  width: 100%;
+  position: relative;
+  padding-top: 100px;
+  background: url(../images/bg_2.png) no-repeat;
+  background-size: 100%;
+}
+  #container > section {
+    width: 1350px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    overflow: hidden;
+  }
+    /***** SECTION *****/
+    section#new {
+      margin-bottom: 120px;
+    }
+    /***** h2 *****/
+    #container > section > h2 {
+      width: 300px;
+      font-size: 50px;
+      font-weight: 200;
+      text-align: left;
+      height: 50px;
+      line-height: 50px;
+      margin-bottom: 80px;
+      margin-left: 50px;
+    }
+    /***** ARTICLE *****/
+    #container > section > article {
+      float: left;
+      width: 400px;
+      margin-right: 50px;
+    }
+          #container > section > article > div > a > div {
+            width: 400px;
+            height: 500px;
+            margin-bottom: 50px;
+            overflow: hidden;
+          }
+          #container > section > article > div > a > h3 {
+            font-size: 26px;
+            font-weight: 300;
+            line-height: 40px;
+            color: #2c2c2c;
+            text-align: center;
+          }
+          #container > section > article > div > a > p {
+            font-size: 23px;
+            font-weight: 300;
+            line-height: 40px;
+            color: #2c2c2c;
+            text-align: center;
+          }
+
+        /** NEW hover effect **/ 
+        .new1 {
+          background-image: url(../images/new1.png);
+          transition-duration: 0.5s;
+        }
+        #new > article:nth-of-type(1) > div:hover > a > .new1 {
+          background-image: url(../images/new1_hover.png);
+        }
+        .new2 {
+          background-image: url(../images/new2.png);
+          transition-duration: 0.5s;
+        }
+        #new > article:nth-of-type(2) > div:hover > a > .new2 {
+          background-image: url(../images/new2_hover.png);
+        }
+        #new > article:nth-of-type(2) {
+          margin-top: -120px;
+        }
+        .new3 {
+          background-image: url(../images/new3.png);
+          transition-duration: 0.5s;
+        }
+        #new > article:nth-of-type(3) > div:hover > a > .new3 {
+          background-image: url(../images/new3_hover.png);
+        }
+
+        /** BEST hover effect **/ 
+       .best1 {
+          background-image: url(../images/best1.png);
+          transition-duration: 0.5s;
+        }
+        #bestseller > article:nth-of-type(1) > div:hover > a > .best1 {
+          background-image: url(../images/best1_hover.png);
+        }
+        .best2 {
+          background-image: url(../images/best2.png);
+          transition-duration: 0.5s;
+        }
+        #bestseller > article:nth-of-type(2) > div:hover > a > .best2 {
+          background-image: url(../images/best2_hover.png);
+        }
+        #bestseller > article:nth-of-type(2) {
+          margin-top: -120px;
+         }
+        .best3 {
+          background-image: url(../images/best3.png);
+          transition-duration: 0.5s;
+        }
+        #bestseller > article:nth-of-type(3) > div:hover > a > .best3 {
+          background-image: url(../images/best3_hover.png);
+        }
+
+/***** BRAND STORY *****/
+#story_pc {
+  width: 100%;
+}
+  #story_pc > img {
+    width: 100%;
+  }
+#story_phone {
+  display: none;
+}
+/***** SNS *****/
+#sns {
+  width: 100%;
+  margin-top: 100px;
+  position: relative;
+  margin-bottom: 200px;
+}
+  #sns > h2 {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 200;
+    text-align: left;
+    padding-left: 5%;
+    margin-bottom: 60px;
+  }
+  #sns > ul.gosns {
+    position: absolute;
+    top: 2px; left: 35%;
+  }
+    #sns > ul.gosns > li {
+      display: inline-block;
+      padding: 0 20px;
+    }
+      #sns > ul.gosns > li > a {
+        text-indent: -6000px; overflow: hidden;
+        width: 46px;
+        height: 46px;
+      }
+      #sns > ul.gosns > li:first-child > a {
+        background: url(../images/icon_facebook.png);
+      }
+      #sns > ul.gosns > li:last-child > a {
+        background: url(../images/icon_instagram.png);
+      }
+    #sns > ul.photo {
+      width: 100%;
+    }
+      #sns > ul.photo > li {
+        display: inline-block;
+        width: 16.3%;
+        padding-right: 0.2%;
+      }
+        #sns > ul.photo > li:last-child {
+          padding-right: 0;
+        }
+            #sns > ul.photo > li > a {
+              overflow: hidden;
+            }
+              #sns > ul.photo > li > a > img {
+                transition-duration: 0.6s;
+                width: 100%;
+                padding-top: 1%;
+              }
+                #sns > ul.photo > li:hover > a > img {
+                  transform: scale(1.1);
+                }

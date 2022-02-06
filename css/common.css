@@ -1,0 +1,77 @@
+/* common.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  font: 13px / normal 'Noto Sans KR', sans-serif;
+  color: #000;
+}
+table, tr, th, td {
+  font: 13px / normal 'Noto Sans KR', sans-serif;
+  color: #000;
+  border-collapse: collapse;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1.0em;
+  font-weight: normal;
+}
+ul, ol, li {
+  list-style: none;
+}
+img, fieldset, frameset, iframe {
+  border: none;
+}
+input, select, option, textarea, button {
+  border: none;
+  background: transparent;
+  border-radius: 0;
+  outline: none;
+}
+a, img, label {
+  display: block;
+}
+legend, hr, caption {
+  display: none;
+}
+em, i, address {
+  font-style: normal;
+}
+b, strong {
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.skip, .blind {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: -6000px;
+}
+input#toggle_menu, input#toggle_search {
+  display: none;
+}
+
+/* html구조 안에 PC, MOBILE이  */
+/* 반응형 PC형 */
+@media screen and ( min-width: 1400px) {
+  label.toggle_menu,
+  label.toggle_search,
+  ul#top_nav_m,
+  ul#main_nav > li > h3,
+  label.btn_close {
+    display: none;
+  }
+}
+@media screen and ( max-width: 1399px) {
+  #top_nav,
+  #mian_nav > li > a {
+    display: none;
+  }
+}

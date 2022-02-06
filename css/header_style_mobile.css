@@ -1,0 +1,202 @@
+/* header_style_mobile.css */
+#wrap{
+  width: 100%;
+}
+  #main_header{
+    width: 100%; height: 60px;
+    position: fixed;
+    left: 0; top: 0;
+    background: #fff;
+    z-index: 300;
+    border-bottom: 1px solid #ccc;
+  }
+    /***** 헤더 로고 *****/
+    h1#logo{
+      position: absolute;
+      left: 50%; top: 12px;
+      transform: translateX(-50%);
+    }
+      h1#logo > a{
+        width: 97px; height: 35px;
+        background: url(../images/logo_mobile.png);
+        text-indent: -6000px; overflow: hidden;
+      }
+        /***** 토글 메뉴 *****/
+        label.toggle{
+          width: 31px; height: 27px;
+          position: absolute;
+          top: 13px; right: 15px;
+          text-indent: -6000px; overflow: hidden;
+          background: url(../images/toggle_mobile.png);
+          transform: rotateZ(0deg);
+        }
+        input#toggle:checked + #wrap > #main_header > label.toggle{
+          background: url(../images/close_mobile.png) no-repeat;
+          transform: rotateZ(180deg);
+          transition-duration: 0.3s;
+        }
+
+        /** 검색창 **/
+        label.toggle_search{
+          width: 29px; height: 30px;
+          position: absolute;
+          top: 13px; right: 60px;
+          text-indent: -6000px; overflow: hidden;
+          background: url(../images/search_mobile.png);
+        }
+        /***** 검색메뉴 smart *****/
+        @media screen and ( max-width: 767px){
+        label.toggle_search{
+          width: 29px; height: 30px;
+          position: absolute;
+          top: 13px; left: 15px;
+          text-indent: -6000px; overflow: hidden;
+          background: url(../images/search_mobile.png);
+        }
+        }
+        #search_wrap{
+          width: 100%; height: 0;
+          background: #1da2dd;
+          position: absolute;
+          left: 0; top: 60px;
+          box-sizing: border-box;
+          padding: 0 7px;
+          overflow: hidden;
+        }
+        input#toggle_search:checked + label.toggle_search + #search_wrap{
+          height: 50px;
+          transition-duration: 0.3s;
+        }
+          #search_wrap > form{
+            margin-top: 7px;
+          }
+          #search_wrap fieldset{
+            height: 36px;
+            width: 99%;
+            margin: 0 auto;
+            background: #fff;
+            position: relative;
+          }
+          input#search_text{
+            width: 100%; height: 36px;
+            box-sizing: border-box;
+            line-height: 36px;
+            padding-left: 10px; 
+            padding-right: 45px;
+          }
+          input#search_btn{
+            display: none;
+          }
+
+  /***** 메인메뉴 *****/
+  #main_nav{
+    position: fixed;
+    top: 60px; bottom: 0;
+    width: 60%;
+    right: -100%;
+    background-image: url(../images/nav_bg_mobile.png);
+    background-size: 100%;
+    display: border-box;
+    z-index: 200;
+  }
+    #main_nav > img{
+      display: none;
+    }
+    input#toggle:checked + #wrap > #main_nav{
+      right: 0;
+      transition-duration: 0.3s;
+    }
+
+    /** 세부메뉴 **/
+    #main_nav > .menu{
+      position: absolute;
+      top: 50px; right: 12%;
+    }
+      #main_nav > .menu > li{
+        padding-bottom: 30px;
+        width: auto;
+      }
+        #main_nav > .menu > li > a{
+          font-size: 43px;
+          font-weight: 200;
+          text-align: right;
+          color: #2c2c2c;
+          transition-duration: 0.3s;   
+        }
+        #main_nav > .menu > li:hover > a{
+          color: #1da2dd;
+        }
+
+    /** 로그인 **/
+    #login{
+      position: absolute;
+      bottom: 12%; right: 12%;
+    }
+    #login > li{
+      display: inline-block;
+      padding: 0 20px;
+      line-height: 25px;
+    }
+    #login > li:first-child{
+      background: url(../images/login_icon.png) right center no-repeat;
+    }
+    #login > li:last-child{
+      padding-right: 0;
+    }
+    #login > li > a{
+      font-size: 18px;
+      font-weight: 300;
+      text-align: right;
+      color: #2c2c2c;
+      transition-duration: 0.3s;
+    }
+    #login > li:hover > a{
+      color: #1da2dd;
+    }
+
+    /***** 메인메뉴 smart *****/
+    @media screen and ( max-width: 767px){
+    #main_nav{
+      width: 100%;
+      top: 60px; bottom: 0;
+    }
+    }
+        /***** 세부메뉴 *****/
+        #main_nav > .menu{
+          position: absolute;
+          top: 10%; right: 12%;
+        }
+          #main_nav > .menu > li{
+            padding-bottom: 30px;
+            width: auto;
+          }
+            #main_nav > .menu > li > a{
+              font-size: 30px;
+              font-weight: 300;
+              text-align: right;
+              color: #2c2c2c;
+              transition-duration: 0.3s;
+            }
+            #main_nav > .menu > li:active > a{
+              color: #1da2dd;
+            }
+        @media screen and ( max-width: 767px){
+        #main_nav > .menu > li{
+          padding-bottom: 20px;
+          width: auto;
+        }
+        #main_nav > .menu > li > a{
+          font-size: 30px;
+          font-weight: 300;
+          text-align: right;
+          color: #2c2c2c;
+          transition-duration: 0.3s;
+        }
+        #login > li > a{
+          font-size: 18px;
+          font-weight: 300;
+          text-align: right;
+          color: #2c2c2c;
+          transition-duration: 0.3s;
+        }
+        }

@@ -1,0 +1,17 @@
+/* master.css */
+@import url( common.css);
+@import url( header_style_pc.css) screen and ( min-width: 1400px);
+@import url( header_style_mobile.css) screen and ( max-width: 1399px);
+@import url( contents_style_pc.css) screen and ( min-width: 1400px);
+@import url( contents_style_mobile.css) screen and ( max-width: 1399px) and ( min-width: 768px);
+@import url( contents_style_phone.css) screen and ( max-width: 1399px) and ( max-width: 767px);
+@import url( footer_style_pc.css) screen and ( min-width: 1400px);
+@import url( footer_style_mobile.css) screen and ( max-width: 1399px) and ( min-width: 768px);
+@import url( footer_style_phone.css) screen and ( max-width: 1399px) and ( max-width: 767px);
+
+/* 디바이스 크기 1367px~	tablat 768px ~ px */
+
+#wrap {
+  width: 100%;
+  background: beige;
+}
