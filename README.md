@@ -39,7 +39,7 @@ KakaoTalk -
 <meta property="og:title" content="Uriage Korea" />
 <meta property="og:description" content="프랑스 더모코스메틱 브랜드, 유리아쥬! 민감성 피부를 위한 프랑스 온천수 함유." />
 <meta property="og:image" content="./images/uriage_seo.png" />
-<meta property="og:url" content="#" />
+<meta property="og:url" content="https://focused-feynman-42ddb9.netlify.app/" />
 ```
 
 - `og:type`: 페이지의 유형(E.g, `website`, `video.movie`)
@@ -61,7 +61,7 @@ KakaoTalk -
 <meta property="twitter:title" content="Uriage Korea" />
 <meta property="twitter:description" content="프랑스 더모코스메틱 브랜드, 유리아쥬! 민감성 피부를 위한 프랑스 온천수 함유." />
 <meta property="twitter:image" content="./images/uriage_seo.png" />
-<meta property="twitter:url" content="#" />
+<meta property="twitter:url" content="https://focused-feynman-42ddb9.netlify.app/" />
 ```
 
 - `twitter:card`: 페이지(카드)의 유형(E.g. `summary`, `player`)
