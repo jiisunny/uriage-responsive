@@ -1,10 +1,10 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9f2f756f-e1fc-48d9-9c07-b7d7433d8aaa/deploy-status)](#)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9f2f756f-e1fc-48d9-9c07-b7d7433d8aaa/deploy-status)](https://app.netlify.com/sites/focused-feynman-42ddb9/deploys)
 
 # Uriage 유리아쥬 💧 💧
 
 유리아쥬 반응형 페이지 제작
 
-[유리아쥬 반응형 페이지](#)
+[유리아쥬 반응형 페이지](https://focused-feynman-42ddb9.netlify.app/)
 
 ![유리아쥬](https://raw.githubusercontent.com/jiisunny/uriage-responsive/master/_assets/main_screenshot.png)
 
