@@ -9,6 +9,8 @@
 html, body {
   font: 13px / normal 'Noto Sans KR', sans-serif;
   color: #000;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 table, tr, th, td {
   font: 13px / normal 'Noto Sans KR', sans-serif;

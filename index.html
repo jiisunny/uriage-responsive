@@ -22,8 +22,19 @@
   <meta property="twitter:url" content="https://focused-feynman-42ddb9.netlify.app/" />
 
   <link rel="icon" href="./favicon.png" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- GSAP & ScrollToPlugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js" integrity="sha512-eI+25yMAnyrpomQoYCqvHBmY4dLfqKWPnD4j8y0E3Js+yqpF26xncL4t81M1zxC+ISYfRoCN52rN/n0q2UIBZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
   <link rel="stylesheet" href="css/master.css" />
+  <script defer src="./js/main.js"></script>
   <script src="js/jquery-3.5.0.min.js"></script>
   <script src="js/menu.js"></script>
     
@@ -199,64 +210,64 @@
 <!----- CONTENTS ----->
 <div id="container">
   <!-- NEW -->
-  <section id="new">
-    <h2>NEW</h2>
+  <section id="new" class="scroll-spy">
+    <h2 class="back-to-position to-right delay-0">NEW</h2>
     <article>
       <div>
         <a href="#">
-          <div class="new1"></div>
-          <h3>유리아쥬 이제약 토너 500mL</h3>
-          <p>HYSEAC PURIFYING TONER</p>
+          <div class="new1 back-to-position to-right delay-1"></div>
+          <h3 class="back-to-position to-right delay-2">유리아쥬 이제약 토너 500mL</h3>
+          <p class="back-to-position to-right delay-3">HYSEAC PURIFYING TONER</p>
         </a>
       </div>
     </article>
     <article>
       <div>
         <a href="#">
-          <div class="new2"></div>
-          <h3>배리어덤 시카 선크림 SPF50+</h3>
-          <p>BARIEDERM CICA-CREAM</p>
+          <div class="new2 back-to-position to-bottom delay-1"></div>
+          <h3 class="back-to-position to-bottom delay-2">배리어덤 시카 선크림 SPF50+</h3>
+          <p class="back-to-position to-bottom delay-3">BARIEDERM CICA-CREAM</p>
         </a>
       </div>
     </article>
     <article>
       <div>
         <a href="#">
-          <div class="new3"></div>
-          <h3>쉬르그라리끼드 전신 클렌저</h3>
-          <p>URIAGE GEL SURGRAS</p>
+          <div class="new3 back-to-position to-left delay-1"></div>
+          <h3 class="back-to-position to-left delay-2">쉬르그라리끼드 전신 클렌저</h3>
+          <p class="back-to-position to-left delay-3">URIAGE GEL SURGRAS</p>
         </a>
       </div>
     </article>
   </section>
         
   <!-- BESTSELLER -->
-  <section id="bestseller">
-    <h2>BESTSELLER</h2>
+  <section id="bestseller" class="scroll-spy">
+    <h2 class="back-to-position to-right delay-0">BESTSELLER</h2>
     <article>
       <div>
         <a href="#">
-          <div class="best1"></div>
-          <h3>유리아쥬 제모스 토너 500mL</h3>
-          <p>XEMOSE TONER</p>
+          <div class="best1 back-to-position to-right delay-1"></div>
+          <h3 class="back-to-position to-right delay-2">유리아쥬 제모스 토너 500mL</h3>
+          <p class="back-to-position to-right delay-3">XEMOSE TONER</p>
         </a>
       </div>
     </article>
     <article>
       <div>
         <a href="#">
-          <div class="best2"></div>
-          <h3>스틱레브르 오리지널 립밤</h3>
-          <p>STICK LEVRES ORIGINAL</p>
+          <div class="best2 back-to-position to-bottom delay-1"></div>
+          <h3 class="back-to-position to-bottom delay-2">스틱레브르 오리지널 립밤</h3>
+          <p class="back-to-position to-bottom delay-3">STICK LEVRES ORIGINAL</p>
         </a>
       </div>
     </article>
     <article>
       <div>
         <a href="#">
-          <div class="best3"></div>
-          <h3>진피 마일드 젤 200mL</h3>
-          <p>GYN-PHY DAILY FEMININE MILD GEL</p>
+          <div class="best3 back-to-position to-left delay-1"></div>
+          <h3 class="back-to-position to-left delay-2">진피 마일드 젤 200mL</h3>
+          <p class="back-to-position to-left delay-3">GYN-PHY DAILY FEMININE MILD GEL</p>
         </a>
       </div>
     </article>
@@ -264,29 +275,31 @@
 </div>
 
 <!-- BRAND STORY_pc-->
-<section id="story_pc">
+<section id="story_pc" class="scroll-spy">
+  <h2 class="back-to-position to-left delay-0">BRAND STORY</h2>
   <img src="images/story_pc.png" alt="유리아쥬 브랜드스토리" />
 </section>
 
 <!-- BRAND STORY_phone-->
-<section id="story_phone">
+<section id="story_phone" class="scroll-spy">
+  <h2 class="back-to-position to-left delay-0">BRAND STORY</h2>
   <img src="images/story_phone.png" alt="유리아쥬 브랜드스토리" />
 </section>
 
 <!-- SNS -->
-<section id="sns">
-  <h2>&num; URIAGE WATER</h2>
+<section id="sns" class="scroll-spy">
+  <h2 class="back-to-position to-right delay-1">&num; URIAGE WATER</h2>
   <ul class="gosns">
-    <li><a href="#">facebook</a></li>
-    <li><a href="#">instagram</a></li>
+    <li class="back-to-position to-bottom delay-1"><a href="#">facebook</a></li>
+    <li class="back-to-position to-bottom delay-2"><a href="#">instagram</a></li>
   </ul>
   <ul class="photo">
-    <li><a href="#"><img src="images/sns1.png" alt="인스타그램 사진 1" /></a></li>
-    <li><a href="#"><img src="images/sns2.png" alt="인스타그램 사진 2" /></a></li>
-    <li><a href="#"><img src="images/sns3.png" alt="인스타그램 사진 3" /></a></li>
-    <li><a href="#"><img src="images/sns4.png" alt="인스타그램 사진 4" /></a></li>
-    <li><a href="#"><img src="images/sns5.png" alt="인스타그램 사진 5" /></a></li>
-    <li><a href="#"><img src="images/sns6.png" alt="인스타그램 사진 6" /></a></li>
+    <li class="back-to-position to-bottom delay-2"><a href="#"><img src="images/sns1.png" alt="인스타그램 사진 1" /></a></li>
+    <li class="back-to-position to-bottom delay-3"><a href="#"><img src="images/sns2.png" alt="인스타그램 사진 2" /></a></li>
+    <li class="back-to-position to-bottom delay-4"><a href="#"><img src="images/sns3.png" alt="인스타그램 사진 3" /></a></li>
+    <li class="back-to-position to-bottom delay-5"><a href="#"><img src="images/sns4.png" alt="인스타그램 사진 4" /></a></li>
+    <li class="back-to-position to-bottom delay-6"><a href="#"><img src="images/sns5.png" alt="인스타그램 사진 5" /></a></li>
+    <li class="back-to-position to-bottom delay-7"><a href="#"><img src="images/sns6.png" alt="인스타그램 사진 6" /></a></li>
   </ul>
 </section>
 

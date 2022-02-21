@@ -121,9 +121,17 @@
 #story_pc {
   width: 100%;
 }
-  #story_pc > img {
-    width: 100%;
-  }
+#story_pc > h2 {
+  font-size: 65px;
+  font-weight: 200;
+  padding-top: 100px;
+  margin: 0 50px -27px 0;
+  float: right;
+  color: #bbebff;
+}
+#story_pc > img {
+  width: 100%;
+}
 #story_phone {
   display: none;
 }

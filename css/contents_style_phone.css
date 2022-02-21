@@ -136,6 +136,13 @@
   #story_phone > img {
     width: 100%;
   }
+  #story_phone > h2 {
+    font-size: 40px;
+    font-weight: 200;
+    margin: 0 10px -27px 0;
+    float: right;
+    color: #bbebff;
+  }
 
 /****** SNS *****/
 #sns {
