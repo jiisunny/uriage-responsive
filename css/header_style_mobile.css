@@ -3,7 +3,7 @@
   width: 100%;
 }
   #main_header{
-    width: 100%; height: 60px;
+    width: 100%; height: 80px;
     position: fixed;
     left: 0; top: 0;
     background: #fff;
@@ -13,7 +13,7 @@
     /***** 헤더 로고 *****/
     h1#logo{
       position: absolute;
-      left: 50%; top: 12px;
+      left: 50%; top: 22px;
       transform: translateX(-50%);
     }
       h1#logo > a{
@@ -25,14 +25,14 @@
         label.toggle{
           width: 31px; height: 27px;
           position: absolute;
-          top: 13px; right: 15px;
+          top: 23px; right: 35px;
           text-indent: -6000px; overflow: hidden;
           background: url(../images/toggle_mobile.png);
           transform: rotateZ(0deg);
         }
         input#toggle:checked + #wrap > #main_header > label.toggle{
           background: url(../images/close_mobile.png) no-repeat;
-          transform: rotateZ(180deg);
+          transform: rotateZ(-180deg);
           transition-duration: 0.3s;
         }
 
@@ -40,7 +40,7 @@
         label.toggle_search{
           width: 29px; height: 30px;
           position: absolute;
-          top: 13px; right: 60px;
+          top: 23px; right: 100px;
           text-indent: -6000px; overflow: hidden;
           background: url(../images/search_mobile.png);
         }
@@ -49,7 +49,7 @@
         label.toggle_search{
           width: 29px; height: 30px;
           position: absolute;
-          top: 13px; left: 15px;
+          top: 23px; left: 22px;
           text-indent: -6000px; overflow: hidden;
           background: url(../images/search_mobile.png);
         }
@@ -58,31 +58,32 @@
           width: 100%; height: 0;
           background: #1da2dd;
           position: absolute;
-          left: 0; top: 60px;
+          left: 0; top: 80px;
           box-sizing: border-box;
           padding: 0 7px;
           overflow: hidden;
         }
         input#toggle_search:checked + label.toggle_search + #search_wrap{
-          height: 50px;
+          height: 60px;
           transition-duration: 0.3s;
         }
           #search_wrap > form{
             margin-top: 7px;
           }
           #search_wrap fieldset{
-            height: 36px;
-            width: 99%;
+            height: 45px;
+            width: 100%;
             margin: 0 auto;
             background: #fff;
             position: relative;
           }
           input#search_text{
-            width: 100%; height: 36px;
+            width: 100%; height: 45px;
             box-sizing: border-box;
             line-height: 36px;
             padding-left: 10px; 
             padding-right: 45px;
+            font-size: 15px;
           }
           input#search_btn{
             display: none;

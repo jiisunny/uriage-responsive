@@ -175,7 +175,8 @@ img {
         background: url(../images/icon_instagram.png);
       }
     #sns > ul.photo {
-      width: 100%;
+      width: 90%;
+      margin: 0 auto;
     }
       #sns > ul.photo > li {
         display: inline-block;

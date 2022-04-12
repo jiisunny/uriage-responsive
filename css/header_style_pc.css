@@ -31,14 +31,14 @@ input#toggle {
   }
   input#toggle:checked + #wrap > #main_header > label.toggle {
     background: url(../images/close.png);
-    transform: rotateZ(180deg);
+    transform: rotateZ(-180deg);
     transition-duration: 0.3s;
   }
 
     /** 검색 창 **/
     #search_wrap {
     position: absolute;
-    right: 350px; top: 55px;
+    right: 380px; top: 55px;
     width: 150px; height: 45px;
   }
     #search_wrap > form {
@@ -56,16 +56,15 @@ input#toggle {
         }
         input#search_text {
           width: 250px; 
-          line-height: 45px;
+          line-height: 50px;
           box-sizing: border-box;
-          padding: 0 20px;
-                    
-                    font-size: 15px;
-                    font-weight: 100;
+          padding: 0 15px;
+          font-size: 19px;
+          font-weight: 100;
         }
         input#search_btn {
-                    position: absolute;
-                    top: 1px; right: -170px;
+          position: absolute;
+          top: 1px; right: -170px;
         }
 
 /** MAIN NAV **/

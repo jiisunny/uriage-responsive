@@ -4,7 +4,7 @@
 #banner {
   width: 100%;
   position: relative;
-  margin-top: -1px;
+  top: 21px;
 }
 .swiper-slide > a > img {
   width: 100%;
@@ -37,7 +37,6 @@
       line-height: 35px;
       margin-left: 5%;
       margin-top: 10%;
-      margin-bottom: 15%;
     }
     /***** ARTICLE *****/
     #container > section > article {
@@ -56,14 +55,14 @@
         overflow: hidden;
       }
       #container > section > article > div > a > h3 {
-        font-size: 23px;
+        font-size: 18px;
         font-weight: 300;
         line-height: 30px;
         color: #2c2c2c;
         text-align: center;
       }
       #container > section > article > div > a > p {
-        font-size: 20px;
+        font-size: 17px;
         font-weight: 300;
         line-height: 40px;
         color: #2c2c2c;
